@@ -1,0 +1,82 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter&family-Merriweather:wght@700&family-work+Sans&display-swap");
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:"work sans,sans-serif";
+}
+
+body{
+  display:flex;
+  justify-content:center;
+  align-items: center;
+  height: 100vh;
+}
+
+h1{
+  color: rgb(43, 45, 36);
+  text-align: center;
+  font-size:48px;
+  letter-spacing: -0.2px;
+  font-family: "Merriweather, serif";
+}
+p{
+  max-width:670px;
+  text-align:center;
+  margin-top: 36px;
+  margin-bottom: 80px;
+}
+#editableEditor{
+  max-width: 670px;
+  height : 316px;
+  padding :18px;
+  background: rgb(255, 255, 255);
+  border : 0.5px solid rgb(4, 0, 4);
+  box-shadow: 0 12px 48px 0px rgba(109, 117, 141 / 20%);
+  border-radius: 16px;
+  font-size:18px;
+  letter-spacing: 1px;
+  word-spacing: 2px;
+  line-height:1.6
+
+}
+#editableEditor:focus{
+  border :3px solid rgb(43,45,56,0.3);
+  outline:none; 
+}
+.checkButton{
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  margin-top: 36px;
+  padding: 12px 24px;
+  background: rgb(43, 45, 56);
+  color: rgb(255, 255, 255);
+  border-radius: 8px;
+  font-size: 18px;
+  letter-spacing: 1px;
+  cursor: pointer;
+}
+button{
+  border: none;
+  background: rgb(5, 116, 242);
+  cursor: pointer;
+  border-radius: 6px;
+  font-size: 18px;
+  color: rgb(255, 255, 255);
+  font-weight: 700;
+  padding: 10px.20px
+}
+button:focus,button:hover{
+  background: rgb(5, 116, 242,0.8);
+  box-shadow: 0 , 5px, 30px 0 rgb(0, 0, 0,0.1);
+}
+button:disabled{
+  opacity : 0.5;
+  cursor: not-allowed;
+}
+.word-counter{
+  display: flex;
+  justify-content:space-between;
+}
