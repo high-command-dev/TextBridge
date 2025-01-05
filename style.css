@@ -47,18 +47,41 @@ p{
   border :3px solid rgb(43,45,56,0.3);
   outline:none; 
 }
-.checkButton{
+#editableEditor:correctionRequired{
+  text-decoration: underline;
+  text-decoration-color: #ff0000;
+}
+.correctionRequired:hover{
+  background-color: #ffcccc;
+  padding: 3px 3px 0px 3px;
+}
+
+.correction-content{
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  width: 40%;
+  height: fit-content;
+  z-index: 1;
+  font-size: 14px;
+}
+.correction-content a{
+  color: black;
+  padding: 5px 3px;
+  text-decoration:none;
+  display: block;
+}
+.correctionRequired:hover.correction-content{
+  display: block;
+
+}
+
+.checkButtons{
   display:flex;
   justify-content:space-evenly;
   align-items:center;
-  margin-top: 36px;
-  padding: 12px 24px;
-  background: rgb(249, 249, 250);
-  color: rgb(255, 255, 255);
-  border-radius: 8px;
-  font-size: 18px;
-  letter-spacing: 1px;
-  cursor: pointer;
+  margin-top: -80px;
+  
 }
 button{
   border:burlywood;
