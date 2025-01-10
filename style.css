@@ -47,7 +47,7 @@ p{
   border :3px solid rgb(43,45,56,0.3);
   outline:none; 
 }
-#editableEditor:correctionRequired{
+.correctionRequired {
   text-decoration: underline;
   text-decoration-color: #ff0000;
 }
@@ -85,7 +85,7 @@ p{
 }
 button{
   border:burlywood;
-  width: 69px;
+  width: 120px;
   background: rgb(5, 116, 242);
   cursor: pointer;
   border-radius: 6px;
@@ -94,7 +94,7 @@ button{
   font-weight: 700;
   padding: 10px;
 }
-button:focus,button:hover{
+button:focus , button:hover{
   background: rgba(57, 148, 251, 0.8);
   box-shadow: 0 5px 30px 0 rgba(0, 0, 0, 0.1);
 }
@@ -128,4 +128,5 @@ button:focus-visible {
 .word-counter{
   display: flex;
   justify-content:space-between;
+  margin-top:10px;
 }
