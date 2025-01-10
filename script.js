@@ -120,7 +120,13 @@ function checkGrammar() {
         for (let i = 0; i < textArray.length; i++) {
           if (textArray[i] !== correctedArray[i]) {
             //it should be check
-result[i]=`<span class="correctionRequired">` + textArray[i] + `<div class="correction-content"> <a href="#">Correction: ${replacements[count]}</a><a href="#">${message[count]}</a></div>` + `</span>`;
+result[i]=`<span class="correctionRequired">
+                          ${textArray[i]}
+                          <div class="tooltip">
+                            ${message[count]}<br>
+                            Suggested: ${replacements[count]}
+                          </div>
+                        </span>`;
             count+= 1; 
           } 
           else {

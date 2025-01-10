@@ -76,6 +76,32 @@ p{
 
 }
 
+.correctionRequired {
+  position: relative;
+  color: red;
+  cursor: pointer;
+}
+
+.correctionRequired .tooltip {
+  visibility: hidden;
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  border-radius: 5px;
+  padding: 5px;
+  position: absolute;
+  z-index: 1;
+  bottom: 125%; /* Position tooltip above the text */
+  left: 50%;
+  transform: translateX(-50%);
+  width: 200px;
+}
+
+.correctionRequired:hover .tooltip {
+  visibility: visible;
+}
+
+
 .checkButtons{
   display:flex;
   justify-content:space-evenly;
