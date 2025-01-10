@@ -106,6 +106,8 @@ function checkGrammar() {
 
       if (data.matches && data.matches.length > 0) {
         console.log(applyCorrections(textToCheck, data.matches));
+
+      
         const { message, replacements, correctedText } = applyCorrections(textToCheck, data.matches);
         
 
